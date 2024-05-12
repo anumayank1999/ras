@@ -198,7 +198,7 @@ const Form = () => {
         {errors.Summary && touched.Summary ? (<p className='Err'>{errors.Summary}</p>):null}
         </label>
         <br/>
-        <button type='submit' disabled={((values.Age <= 14)||(values.AreaType.length <= 2)||(values.PolicyNo.length === 0)||(values.PolicyNo.length >= 11)||(values.Make.length === 0)||(values.Make.length >= 11)||(values.Summary.length <= 29))}>Submit</button>
+        <button type='submit' disabled={((values.Age <= 14)||(values.AreaType.length <= 2)||(values.Base.length <= 2)||(values.Gender.length <= 2)||(values.PolicyNo.length === 0)||(values.PolicyNo.length >= 11)||(values.Make.length === 0)||(values.Make.length >= 11)||(values.Summary.length <= 29))}>Submit</button>
       </form>
     </>
   )
