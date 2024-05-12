@@ -1,0 +1,38 @@
+.stylee {
+    display: flex;
+    justify-content: center;
+}
+
+.font {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.visit{
+    justify-content: center;
+    text-align: center;
+}
+
+ .font a:link{
+  color:black;
+  text-decoration: none;
+}
+
+/* unvisited link */
+
+  
+  /* visited link */
+ .font a:visited {
+    color:black;
+  }
+  
+  /* mouse over link */
+ .font a:hover {
+    font-weight:bold;
+  }
+  
+  /* selected link */
+ .font a:active {
+    color:black;
+    
+  }

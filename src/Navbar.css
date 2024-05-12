@@ -1,0 +1,141 @@
+.nav{
+  display:flex;
+  background-color: gray;
+  padding-left: 2rem;
+  padding-top: 0.5%;
+  align-items:centre;
+}
+.navbckgnd {
+  display: flex;
+  
+  justify-content: baseline;
+  padding-left: 20%;
+}
+.links{
+  align-self: flex-end;
+    justify-content: flex-end;
+    color: rgb(14, 138, 246);
+    padding-left: 2rem;
+    text-align: end;
+}
+
+.links a:link{
+  color:aliceblue;
+  text-decoration: none;
+}
+
+/* unvisited link */
+
+  
+  /* visited link */
+.links a:visited {
+    color:aqua;
+  }
+  
+  /* mouse over link */
+.links a:hover {
+    font-weight:bold;
+  }
+  
+  /* selected link */
+.links a:active {
+    color:darksalmon;
+    
+  }
+
+  .brand {
+    color:white;
+    font-size: 30px;
+    margin:0%;
+    padding: 0%;
+    font-weight:bold;
+  }
+  .brand a:visited {
+    color:whitesmoke;
+  }
+
+  .brand :active {
+    color:black;
+    
+  }
+
+  .brand a:link{
+    color:whitesmoke;
+    text-decoration: none;
+  }
+
+.toggle{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar{
+  height: 3px;
+  width: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 955px) {
+  .navbckgnd {
+    padding-left: 0rem;
+  }
+}
+
+
+@media screen and (max-width: 840px) {
+  .nav {
+      display: block;
+      padding-left: 0rem;
+      padding-top: 0%;
+    }
+    .navbckgnd {
+      display: flex;
+      justify-content:flex-start;
+      padding-left: 0%;
+    }
+  .brand {
+    font-size: 25px;
+    padding: 1rem;
+  }
+  .links{
+    justify-content: flex-start;
+    color: rgb(14, 138, 246);
+    padding-left: 1rem;
+}
+
+}
+
+@media screen and (max-width: 520px) {
+  .links{
+    justify-content: flex-start;
+    color: rgb(14, 138, 246);
+    padding-left: 0.3rem;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .toggle{
+    display: flex;  
+}
+.navbckgnd{
+  display: none;
+  
+}
+.navbckgnd.is-open{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbckgnd.active {
+    display: grid;
+  }
+}

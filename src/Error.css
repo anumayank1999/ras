@@ -1,0 +1,11 @@
+p{
+    text-justify: auto;
+    text-align: center;
+}
+
+.RL{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
